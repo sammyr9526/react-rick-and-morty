@@ -1,0 +1,15 @@
+.header {
+  position: relative;
+}
+.searchbar {
+  margin-bottom: 2rem;
+  margin-top: 60px;
+  align-content: center;
+  width: 100px;
+}
+
+.button2 {
+  margin-bottom: 2rem;
+  position: absolute;
+  left: 88%;
+}
