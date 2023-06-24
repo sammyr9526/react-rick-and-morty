@@ -4,8 +4,8 @@ import SearchCharacter from "./SearchCharacter";
 
 function NavePage(props) {
   return (
-    <div>
-      <header>
+    <div className="mb-3 d-block">
+      <div>
         {props.page < 2 ? (
           ""
         ) : (
@@ -22,7 +22,7 @@ function NavePage(props) {
         >
           Next
         </button>
-      </header>
+      </div>
     </div>
   );
 }
@@ -50,7 +50,7 @@ function CharacterList() {
     <div className="container">
       <p>Page {page}</p>
       <NavePage page={page} setPage={setPage} />
-      <SearchCharacter setSearch={setSearch} />
+      <SearchCharacter setSearch={setSearch} setPage={setPage} />
       {loading ? (
         <h1>...Loading</h1>
       ) : (

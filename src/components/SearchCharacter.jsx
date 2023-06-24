@@ -1,4 +1,4 @@
-function SearchCharacter({ setSearch }) {
+function SearchCharacter({ setSearch, setPage }) {
   return (
     <div className="searchbar input-group">
       <input
@@ -6,7 +6,9 @@ function SearchCharacter({ setSearch }) {
         type="text"
         name="search"
         placeholder="search a character"
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) => {
+          setSearch(e.target.value), setPage(1);
+        }}
       />
       <button className="btn btn-primary ">search</button>
     </div>
